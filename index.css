@@ -1,0 +1,139 @@
+/* Set height to 100% for body and html to enable the background image to cover the whole page: */
+body, html {
+    height: 100%;
+    margin:0px;
+      /* Add a white text color to all elements inside the .bgimg container */
+      color: #00AEEF;
+      /* Add a font */
+      font-family: "poppins", Courier, monospace;
+      /* Set the font-size to 25 pixels */
+      font-size: 20px;
+  }
+  
+  .bgimg {
+    /* Background image */
+    background: url('bg.jpg');
+    
+    /* Full-screen */
+    height: 100%;
+    /* Center the background image */
+    background-position: center;
+    /* Scale and zoom in the image */
+    background-size: cover;
+    /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
+    position: relative;
+  
+  }
+
+    
+  .logoimg {
+   /* margin-top: 10px; */
+    max-height: 100%;
+  
+  }
+
+  .layer {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+  
+  /* Position text in the top-left corner */
+  .topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+  }
+  
+  /* Position text in the bottom-left corner */
+  .bottomleft {
+    position: absolute;
+    bottom: 0;
+    height: 150px;
+    background: rgba(255, 255, 255, 1);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+   
+   
+  }
+  
+  /* Position text in the middle */
+  .middle {
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  /* Style the <hr> element */
+  .hr {
+    margin: auto;
+   
+  }
+
+
+  /* Style the <hr> element */
+  .footdiv {
+   height: 100%;width: 45%;
+  }
+  .right {
+    margin-right: 25px;
+    margin-top: 5%;
+    text-align: right;
+    color: black;
+    font-weight: bold;
+    font-size: medium;
+   }
+
+   .left {
+    margin-left: 25px;
+    margin-top: 5%;
+    text-align: left;
+    color: black;
+    font-weight: bold;
+    font-size: medium;
+   }
+
+
+   @media only screen and (max-width: 600px) {
+    body, html {
+        width: 100%;
+        margin:0px;
+          /* Add a white text color to all elements inside the .bgimg container */
+          color: #00AEEF;
+          /* Add a font */
+          font-family: "poppins", Courier, monospace;
+          /* Set the font-size to 25 pixels */
+          font-size: 14px;
+          
+      }
+    .bottomleft {
+        position: absolute;
+        bottom: 0;
+        height: 150px;
+        background: rgba(255, 255, 255, 1);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+       
+       
+       
+      }
+      .footdiv {
+        height: 100%;width: 100%;
+       }
+      
+      .logoimg {
+       width: 200px;
+         max-height: 100%;
+         
+       margin-left: auto;
+       margin-right: auto;
+       }
+  }
